@@ -1,0 +1,19 @@
+{
+  "name": "ac-data",
+  "version": "1.0.0",
+  "description": "Creating master recipe json for AC-DIY app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarriorofZarona/AC_Recipe-Compiler.git"
+  },
+  "author": "WarriorofZarona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarriorofZarona/AC_Recipe-Compiler/issues"
+  },
+  "homepage": "https://github.com/WarriorofZarona/AC_Recipe-Compiler#readme"
+}
