@@ -6,4 +6,19 @@ const items = JSON.parse(fs.readFileSync('items.json', 'utf8'))
 
 const newRecipesArr = []
 
+recipes.forEach(recipe => {
+    items.forEach(item => {
+        if (recipe.name === item.name) {
+            if (item.variants[0].image) {
+                recipe.image = item.variants[0].image;
+            } else {
+                recipe.image = item.variants[0].storageImage;
+            }
+            newRecipesArr.push(recipe);
+        }
+    })
+});
 
+let data = JSON.stringify(newRecipesArr)
+
+fs.writeFileSync('newRecipes.json', data)
